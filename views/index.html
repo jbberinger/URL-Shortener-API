@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300|Source+Code+Pro" rel="stylesheet">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body class="main">
+      <div class="container">
+        <h1>URL Shortener</h1>
+        <h3>Instructions:</h3>
+        <div class="instructions">
+          <ol>
+          <li>POST a URL to <code>turquoise-timer.glitch.me/api/shorturl/(insert url here)</code> to receive a shortUrl json page<p class="example">Example: <code>{"original_url":"www.google.com","short_url":1}</code></p></li>
+          <li>Only valud URLs that follow the <code>http(s)://www.example.com(/more/routes)</code> format will be accepted<br><p class="example">Example: <code>POST turquoise-timer.glitch.me/api/shorturl/https://www.spacex.com</code></p></li>
+          </ol>
+        </div>
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url" value="https://www.spacex.com/">
+          <input id="submit" type="submit" value="POST URL">
+        </form>
+        <h3>Example Usage:</h3>
+        <a href="https://turquoise-timer.glitch.me/api/shorturl/16">
+          https://turquoise-timer.glitch.me/api/shorturl/16
+        </a>
+
+        <h3>Will Redirect to:</h3>
+        <p>https://www.spacex.com/</p>
+      </div>
+      <div class="footer">
+        <p>
+          by Justin Beringer
+        </p>
+      </div>
+   </body>
+
+</html>
