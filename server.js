@@ -33,9 +33,7 @@ let Counter = mongoose.model('Counter', counterSchema);
 var port = process.env.PORT || 3000;
 app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
