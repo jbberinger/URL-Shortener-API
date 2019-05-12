@@ -115,3 +115,18 @@ input {
   border: 5px;
   border-color: #6C151E;
 }
+
+@media only screen and (max-width: 725px) {
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #E1E1C3;
+    background-color: #0D325D;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: bold;
+    margin-top: 5vh;
+    padding: 0px;
+  }
+
+}
