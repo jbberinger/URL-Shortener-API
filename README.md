@@ -1,5 +1,10 @@
+Built with: Node, Express, Mongoose, MongoDB, HTML5, CSS, Javascript
+
+[Live Glitch App](https://turquoise-timer.glitch.me)
+
+--------
+
 # API Project: URL Shortener Microservice for freeCodeCamp
-## Live Glitch App: [https://turquoise-timer.glitch.me](https://turquoise-timer.glitch.me)
 
 ### User Stories
 
